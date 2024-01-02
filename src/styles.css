@@ -1,0 +1,154 @@
+@font-face {
+    font-family:'roboto-regular';
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+
+body,html{
+    font-family:'roboto-regular';
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(../src/images/pk-background.jpg);
+    background-repeat: no-repeat;  
+    background-attachment: fixed;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    list-style-type:none;
+    margin-right: 0;
+}
+
+img{
+    max-width: 100vw;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    font-size: 15px;
+    overflow:hidden;
+}
+
+#navbar div{
+    padding: 15px 137px;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid rgb(248, 167, 167);
+    height: 100%;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0px 5px 5px grey;
+}
+
+#navbar div:hover{
+    background-color: rgb(212, 96, 111);
+    box-shadow: 5px 5px 5px grey;
+}
+
+#navbar{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 182, 193,0.1);
+    
+}
+
+#content{
+    background-repeat: no-repeat;  
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.main{
+    margin: 20px;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-height: 500px;
+    width: 800px;
+    font-family: "roboto-regular";
+    background-color:rgba(188, 155, 93, 0.8);
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.main-text{
+    opacity: 1;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.footer{
+    background-color:rgba(188, 155, 93, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 40px;
+    color: white;
+}
+
+/** CSS for about page **/
+
+.phone, .address {
+    display: flex;
+    margin-top: 30px;
+    align-self: flex-start;
+    justify-content: center;
+    align-items: center;
+    padding-left: 120px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.icon{
+    width: 50px;
+    height:50px;
+}
+
+/** CSS for menu**/
+
+.menu-container{
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    padding:30px;
+    gap:30px;
+    justify-content: center;
+}
+
+.menu-item img{
+ 
+    width:200px;
+    height: 250px;
+}
+
+.menu-item{
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(188, 155, 93, 0.8);
+    gap:15px;
+    padding:40px;
+    color:white;
+    font-size: 25px;
+    width:200px;
+    height: 300px;
+    font-weight: bold;
+}
+
+.menu-item:hover{
+    opacity: 0.5;
+}
